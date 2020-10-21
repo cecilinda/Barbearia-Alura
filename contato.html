@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Barbearia Haar</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png" alt=""></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <form id="login">
+                <h1 class="login">Login:</h1> 
+                <input type="text" name="Usuario" id="Usuario">
+                <h1 class="login">Senha:</h1>
+                <input type="password" name="Senha:" id="Senha"> 
+                <input type="submit" value="Entrar">
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="contato-form">
+            <form>
+                <label for="nomeSobrenome">Nome e Sobrenome: </label>
+                <input type="text" name="nome" id="nomeSobrenome" class="input-padrao" required>
+
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone: </label>
+                <input type="tel" name="telefone" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem: </label>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao" required></textarea>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato? </legend>
+                    <label for="radio-email"><input type="radio" name="contato" id="radio-email" value="email"> Email </label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" id="radio-telefone" value="telefone"> Telefone </label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp" value="WhatsApp" checked> WhatsApp </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por Email?</label>
+
+
+                <input type="submit" value="Enviar Formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h~20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <img src="logo-branco.png" alt="logo">
+        <p class="copyrigth">&copy; Copyrigth Barbearia Haar - 2020</p>
+    </footer>
+</body>
+</html>
